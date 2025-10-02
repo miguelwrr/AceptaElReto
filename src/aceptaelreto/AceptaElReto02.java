@@ -21,7 +21,7 @@ public class AceptaElReto02 {
 		for (int i = 1; i <= attempts; i++) {
 
 			input = sc.nextLine();
-			while (!(input.equalsIgnoreCase("colgadas")) && !(input.equalsIgnoreCase("colgantes"))) {
+			while (!(input.equalsIgnoreCase("colgadas") || input.equalsIgnoreCase("colgantes"))) {
 				input = sc.nextLine();
 			}
 			System.out.println((input.equalsIgnoreCase("colgadas") ? "Bien" : "Mal"));
